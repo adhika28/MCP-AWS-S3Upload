@@ -1,0 +1,4 @@
+openai
+boto3
+python-docx
+nest_asyncio
