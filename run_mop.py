@@ -72,7 +72,10 @@ async def main():
     prompt = input("MoP apa yang ingin kamu buat? ")
     mop_text = generate_mop(prompt)
 
-    filename = "Generated_MoP.docx"
+    from datetime import datetime
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    filename = f"Generated_MoP_{timestamp}.docx"
+    
     save_to_docx(mop_text, filename)
     print(f"MoP saved to {filename}")
 
