@@ -27,7 +27,7 @@ class MCPClient:
 # Mengaktifkan event loop 
 nest_asyncio.apply()
 
-# Inisialisasi API key dan AWS
+# Inisialisasi API key OpenAI dan AWS
 openai.api_key = os.getenv("OPENAI_API_KEY")
 os.environ["AWS_ACCESS_KEY_ID"] = os.getenv("AWS_ACCESS_KEY_ID")
 os.environ["AWS_SECRET_ACCESS_KEY"] = os.getenv("AWS_SECRET_ACCESS_KEY")
